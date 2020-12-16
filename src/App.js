@@ -12,10 +12,13 @@ import {
 const App = () => {
   return (
     <div>
+      <h1>Taimoor khan hello there</h1>
       <Header />
       <About />
       <Skills />
-      <h1>Taimoor khan hello there</h1>
+      <Portfolio />
+      <Conatact />
+      <Footer />
     </div>
   );
 };
