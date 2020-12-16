@@ -1,8 +1,10 @@
 .heroContainer {
-    background:#dedede;
+    height: 100vh;
+    display: flex;
 }
 
 .bigOne {
     font-size: 89.76px;
     line-height: 105px;
+    margin: 100px 0 0 0;
 }
