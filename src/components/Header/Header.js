@@ -1,9 +1,21 @@
 import React from "react";
+import styles from "./header.module.css";
 
-const Header = () => {
+const Header = ({ list }) => {
   return (
-    <div>
-      <h4>Header</h4>
+    <div className={styles.header}>
+      <div className={styles.logo}>
+        <h4>TaimoorK.</h4>
+      </div>
+      <nav className={styles.nav}>
+        <ul>
+          {list.map((item) => (
+            <li className={styles.naveLink}>
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 };

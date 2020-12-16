@@ -1,25 +1,29 @@
 import React from "react";
+import Container from "@material-ui/core/Container";
 
 import {
   Header,
+  HeroContainer,
   About,
   Skills,
   Portfolio,
   Conatact,
   Footer,
 } from "./components";
+import styles from "./app.module.css";
 
 const App = () => {
+  const navList = ["Home", "About", "Portfolio", "Contact"];
   return (
-    <div>
-      <h1>Taimoor khan hello there</h1>
-      <Header />
+    <Container maxWidth="lg" className={styles.container}>
+      <Header list={navList} />
+      <HeroContainer />
       <About />
       <Skills />
       <Portfolio />
       <Conatact />
       <Footer />
-    </div>
+    </Container>
   );
 };
 
