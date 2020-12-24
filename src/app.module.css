@@ -1,5 +1,20 @@
 * {
     box-sizing: border-box;
+
+}
+:root {
+    --big-one: calc(1rem * (1.33*1.33*1.33*1.33*1.33*1.33));
+    --big-height: calc(var(--big-one)*1.22);
+
+    --h1 :  calc(1rem * (1.33*1.33*1.33));
+    --h1-height: calc(var(--h1)*1.77);
+
+    --h2 :  calc(16px * (1.33*1.33));
+    --h2-height: calc(var(--h2)*1.77);
+    
+    /* --p :  calc(16px * 1.33); */
+    --p :  calc(1rem * 1.33);
+    --p-height: calc(var(--p)*1.77);
 }
 body {
     font-family: Raleway;
@@ -11,18 +26,18 @@ body {
 
 
 h1 {
-    font-size: 37.9px;
-    line-height: 45px;
+    font-size: var(--h1);
+    line-height: var(--h1-height);
 
 }
 h2 {
-    font-size: 28.43px;
+    font-size: --var(h2);
     line-height: 48.33px;
 
 }
 
 p {
-    font-size: 28.43px;
-    line-height: 48.33px;
-    margin: 0;
+    font-size: var(--p);
+    line-height: var(--p-height);
+    margin: 10px 0;
 }

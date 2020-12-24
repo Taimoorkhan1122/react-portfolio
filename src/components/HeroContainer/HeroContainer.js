@@ -4,7 +4,7 @@ import styles from "./hero.module.css";
 const HeroContainer = () => {
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.intro}>
+      <div className={styles.content}>
         <h1 className={styles.bigOne}>
           Hey there <br /> Welcome
         </h1>
