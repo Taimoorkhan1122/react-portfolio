@@ -3,6 +3,7 @@ import React from "react";
 import CreateSKills from "./CreateSKills";
 
 import styles from "./skills.module.css";
+import appStyles from "../../app.module.css";
 const Skills = () => {
   const devSkills = [
     { name: "js", color: `yellow` },
@@ -25,10 +26,10 @@ const Skills = () => {
   ];
   return (
     <div className={styles.skillContainer}>
-      <h2 className={styles.heading}>Development Skills</h2>
+      <h2 className={appStyles.heading}>Development Skills</h2>
       <CreateSKills skills={devSkills} size="9vw" />
       <br />
-      <h2 className={styles.heading}>Design Skills</h2>
+      <h2 className={appStyles.heading}> Design Skills</h2>
       <CreateSKills skills={DesignSkills} size="9vw" />
     </div>
   );

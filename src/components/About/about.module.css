@@ -1,12 +1,19 @@
 .aboutContainer {
     /* height: 100vh; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
 img {
     width: 50%;
+}
+
+
+.contentContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content {
