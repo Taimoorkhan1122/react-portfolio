@@ -4,15 +4,16 @@
     align-items: center;
     height:50px;
     max-width: 1280px;
+    
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 2.25vw;
 }
 .nav ul {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
     /* background-color: #000; */
@@ -30,4 +31,10 @@ li a {
 .navLink {
     font-size: 21.33px;
     margin: 0;
+}
+
+@media only screen and (max-width: 450px) {
+ .logo {
+    font-size: 3.75vw;
+ }
 }

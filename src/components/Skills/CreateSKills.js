@@ -11,8 +11,10 @@ function CreateSKills({ skills, size }) {
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
+      marginTop: "6vw",
+      marginBottom: "3vw",
       "& > *": {
-        margin: "theme.spacing(1)",
+        margin: theme.spacing(1),
         width: theme.spacing(16),
         height: theme.spacing(16),
       },

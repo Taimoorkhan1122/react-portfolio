@@ -20,8 +20,10 @@
 body {
     font-family: Raleway;
     color: #161616;
-    font-size: 16px;
+    font-size: 1.75 vw;
     line-height: calc(16*1.333px);
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -64,8 +66,6 @@ p {
     width: 2em;
 }
 
-
-
 @media only screen and (max-width: 700px ) {
     :root{
         --unit: 2vw;
@@ -76,5 +76,12 @@ p {
     :root{
         --unit: 3vw;
     }
+    body {
+        font-size: 2.5vw;
+    }
+     img {
+     width: 70vw !important;
+ }
+ 
 }
 

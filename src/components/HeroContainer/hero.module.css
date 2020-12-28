@@ -3,7 +3,6 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 h1 {margin: 0;}
 .bigOne {
@@ -15,4 +14,27 @@ h1 {margin: 0;}
 .content {
     width: 50%;
     padding: 0 1.2rem 0 0;
+}
+
+
+/* 
+@media only screen and (max-width: 700px ) {
+
+} */
+@media only screen and (max-width: 450px) {
+ .heroContainer {
+     
+    flex-direction: column;
+    text-align: center;
+ }
+
+ .content {
+     width: 100%;
+     /* display: flex; */
+     text-align: center;
+     padding: 0;
+     margin: 30px 0;
+
+ }
+
 }
