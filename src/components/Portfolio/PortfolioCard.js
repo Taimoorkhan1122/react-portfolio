@@ -9,14 +9,15 @@ function PortfolioCard(props) {
     backgroundSize: "contain",
   };
 
-  console.log(inlineStyles.backgroundImage);
-
   return (
-    <div className={styles.projects}>
+    <div key={props.index} className={styles.projects}>
       <div className={styles.bgimage} style={inlineStyles}></div>
       <div className={styles.data}>
         <h3>{props.data.name}</h3>
         <p>{props.data.details}</p>
+        <a href={`${props.data.link}`} target="_blank" rel="noreferrer">
+          Live Project
+        </a>
       </div>
     </div>
   );

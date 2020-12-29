@@ -9,8 +9,8 @@ const Header = ({ list }) => {
       </div>
       <nav className={styles.nav}>
         <ul>
-          {list.map((item) => (
-            <li className={styles.naveLink}>
+          {list.map((item, index) => (
+            <li key={index + 1} className={styles.naveLink}>
               <a href={`#${item}`}>{item}</a>
             </li>
           ))}

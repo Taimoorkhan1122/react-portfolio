@@ -18,32 +18,33 @@ const App = () => {
     {
       name: "React Dashboard",
       details: "Highl customizeable dashboard with dynamic data color input",
-      link: "./linkToProject",
+      link: "http://react-dashboard-taimoor.surge.sh/",
       image: "/images/projects/react-dashboard.png",
     },
     {
-      name: "Covid19 Tracker",
-      details: "created using Material UI and React Chartjs2",
-      link: "./linkToProject",
-      image: "/images/projects/react-dashboard.png",
+      name: "React Shoe Store",
+      details: "Created using React Router v6",
+      link: "http://react-store-taimoor.surge.sh/",
+      image: "/images/projects/react-shoe-store.png",
     },
     {
       name: "Expense Tracker App",
       details: "Expense Tracker app using React",
-      link: "./linkToProject",
-      image: "/images/projects/react-dashboard.png",
+      link: "http://expense-tracker-taimoor.surge.sh/",
+      image: "/images/projects/expense-tracker-app.png",
     },
     {
       name: "Red Queen race",
       details: "React Webkit animation project",
-      link: "./linkToProject",
-      image: "/images/projects/react-dashboard.png",
+      link: "http://react-webanimation-taimoor.surge.sh/",
+      image: "/images/projects/red-queen-animation.png",
     },
     {
-      name: "Food finder App",
-      details: "Food finder | using vanilla js ",
+      name: "Covid19 Tracker App",
+      details:
+        "Covid19 tracker app created using Material UI and React Chartjs2",
       link: "./linkToProject",
-      image: "/images/projects/react-dashboard.png",
+      image: "/images/projects/covid19-tracker-app.png",
     },
   ];
   return (
