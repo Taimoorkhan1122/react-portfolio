@@ -15,7 +15,11 @@ function PortfolioCard(props) {
       <div className={styles.data}>
         <h3>{props.data.name}</h3>
         <p>{props.data.details}</p>
-        <a href={`${props.data.link}`} target="_blank" rel="noreferrer">
+        <a
+          className={styles.link}
+          href={`${props.data.link}`}
+          target="_blank"
+          rel="noreferrer">
           Live Project
         </a>
       </div>

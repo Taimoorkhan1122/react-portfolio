@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;
+    padding: 10px;
+}
+
+.heading {
+    max-width: 35vw;
+}
+
+.heading h1 {
+    font-size: var(--big-one);
+    line-height: var(--big-height);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 50vw;
+    min-width: 400px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--p);
+    background-color: #05ddff;
+    color: #fff;
+}
+
+.form #message {
+    height: 30vh;
+}
