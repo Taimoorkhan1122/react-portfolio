@@ -17,15 +17,17 @@ const App = () => {
   const navList = ["Home", "About", "Portfolio", "Contact"];
 
   return (
-    <Container maxWidth="lg" className={styles.container}>
-      <Header list={navList} />
-      <HeroContainer />
-      <About />
-      <Skills />
-      <Portfolio data={data} />
-      <Contact />
+    <>
+      <Container maxWidth="lg" className={styles.container}>
+        <Header list={navList} />
+        <HeroContainer />
+        <About />
+        <Skills />
+        <Portfolio data={data} />
+        <Contact />
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 };
 

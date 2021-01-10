@@ -1,0 +1,39 @@
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E9E9;
+    margin: 0;
+    padding: 10px;
+}
+
+.inner-container {
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.icons-container {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    margin: auto;
+    /* background-color: #000; */
+}
+.author {
+    margin: auto;
+}
+.icons-container i {
+    margin: 0 0.5rem;
+}
+
+a {
+    color: black;
+}
+

@@ -1,0 +1,9 @@
+/* square buttons */
+.rec.rec-arrow {
+    border-radius: 0;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+    border-radius: 50%;
+    background: #63CAFF !important;
+}
