@@ -1,9 +1,5 @@
 import React from "react";
-import useWebAnimations, {
-  rubberBand,
-  bounceInRight,
-  bounceInLeft,
-} from "@wellyshen/use-web-animations";
+import useWebAnimations, { rubberBand } from "@wellyshen/use-web-animations";
 import Slide from "react-reveal/Slide";
 
 import styles from "./about.module.css";

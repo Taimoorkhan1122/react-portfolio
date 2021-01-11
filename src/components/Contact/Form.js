@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 
-import {
-  FormControl,
-  Input,
-  InputLabel,
-  FormHelperText,
-  TextField,
-} from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import styles from "./contact.module.css";
