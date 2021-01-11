@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
 
 import {
@@ -15,9 +15,9 @@ import styles from "./app.module.css";
 
 const App = () => {
   const navList = ["Home", "About", "Portfolio", "Contact"];
-
+  let [flag, setFlag] = useState(false);
   return (
-    <>
+    <div onScroll={() => setFlag(true)}>
       <Container maxWidth="lg" className={styles.container}>
         <Header list={navList} />
         <HeroContainer />
@@ -27,7 +27,7 @@ const App = () => {
         <Contact />
       </Container>
       <Footer />
-    </>
+    </div>
   );
 };
 

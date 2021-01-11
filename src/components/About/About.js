@@ -1,23 +1,45 @@
 import React from "react";
+import useWebAnimations, {
+  rubberBand,
+  bounceInRight,
+  bounceInLeft,
+} from "@wellyshen/use-web-animations";
+import Slide from "react-reveal/Slide";
+
 import styles from "./about.module.css";
 import appStyles from "../../app.module.css";
 const About = () => {
+  const { ref: refRight } = useWebAnimations({ ...bounceInRight });
+  const { ref: refLeft } = useWebAnimations({ ...bounceInLeft });
+  const { ref: refRubber, getAnimation } = useWebAnimations({ ...rubberBand });
+
   return (
     <div className={styles.aboutContainer}>
-      <h1 className={appStyles.heading}>About Me</h1>
+      <h1
+        className={appStyles.heading}
+        ref={refRubber}
+        onClick={() => getAnimation().play()}>
+        About Me
+      </h1>
       <div className={styles.contentContainer}>
-        <img src="./images/about-me.svg" alt="developer illustration" />
-        <div className={styles.content}>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua.
-          </p>
-        </div>
+        <Slide left>
+          <img
+            ref={refLeft}
+            src="./images/about-me.svg"
+            alt="developer illustration"
+          />
+        </Slide>
+        <Slide right>
+          <div className={styles.content} ref={refRight}>
+            <p>
+              I am a Front-end React Developer, currently learning react native
+              and MERN stack developing. I love to develop aesthetic UI with
+              pixel perfect dimensions. With my design skills that help me to
+              develop better UI I can develop any sort of complex UI either it
+              is for web interface or mobile phone.
+            </p>
+          </div>
+        </Slide>
       </div>
     </div>
   );
