@@ -53,10 +53,14 @@ function Form() {
     root: {
       "& > *": {
         margin: theme.spacing(1),
-        width: "32ch",
+        width: "50vh",
       },
       "& #message": {
-        height: "10ch",
+        height: "10vh",
+        justifyContent: "start",
+      },
+      "& #name, #email": {
+        height: "2.5vh",
         justifyContent: "start",
       },
     },
@@ -100,7 +104,9 @@ function Form() {
           value={formState.message}
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.button}>
+          Submit
+        </button>
       </form>
     </div>
   );

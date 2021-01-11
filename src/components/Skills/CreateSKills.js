@@ -48,6 +48,7 @@ function CreateSKills({ skills, size }) {
       {/* ALSO CAN APPLY CLASSES LIKE THIS => classes={{ root: classes.paper }} */}
       {skills.map((item, index) => {
         const color = item.color;
+        let direction = false;
 
         if (item.name === "kubernetes") {
           return (

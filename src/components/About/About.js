@@ -9,12 +9,10 @@ import Slide from "react-reveal/Slide";
 import styles from "./about.module.css";
 import appStyles from "../../app.module.css";
 const About = () => {
-  const { ref: refRight } = useWebAnimations({ ...bounceInRight });
-  const { ref: refLeft } = useWebAnimations({ ...bounceInLeft });
   const { ref: refRubber, getAnimation } = useWebAnimations({ ...rubberBand });
 
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id="About">
       <h1
         className={appStyles.heading}
         ref={refRubber}
@@ -23,14 +21,10 @@ const About = () => {
       </h1>
       <div className={styles.contentContainer}>
         <Slide left>
-          <img
-            ref={refLeft}
-            src="./images/about-me.svg"
-            alt="developer illustration"
-          />
+          <img src="./images/about-me.svg" alt="developer illustration" />
         </Slide>
         <Slide right>
-          <div className={styles.content} ref={refRight}>
+          <div className={styles.content}>
             <p>
               I am a Front-end React Developer, currently learning react native
               and MERN stack developing. I love to develop aesthetic UI with

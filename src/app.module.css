@@ -19,6 +19,10 @@
     --p :  calc((var(--unit) * 1.33));
     --p-height: calc(var(--p)*1.77);
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Raleway;
     color: #161616;

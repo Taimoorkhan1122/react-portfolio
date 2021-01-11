@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     margin: 2.5rem 0;
@@ -8,10 +8,11 @@
 }
 
 .heading {
-    max-width: 35vw;
+    max-width: 60vh;
 }
 
 .heading h1 {
+    width: fit-content;
     font-size: var(--big-one);
     line-height: var(--big-height);
     text-align: center;
@@ -19,12 +20,13 @@
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 50vw;
-    min-width: 400px;
+    min-height: 75vh;
+    width: 70vh;
+    min-width: 320px;
+    max-width: 600px;
     margin: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -39,7 +41,9 @@ form {
     width: 100%;
 }
 
-form button {
+form .button {
+    cursor: pointer;
+    width: 25vw;
     padding: 10px;
     outline: none;
     border: none;
@@ -51,4 +55,10 @@ form button {
 
 .form #message {
     height: 30vh;
+}
+
+@media(max-width: 450px) {
+    .form {
+        width: 55vh;
+    }
 }

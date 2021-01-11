@@ -9,7 +9,7 @@ const HeroContainer = () => {
   const { ref: refRight } = useWebAnimations({ ...bounceInRight });
   const { ref: refLeft } = useWebAnimations({ ...bounceInLeft });
   return (
-    <div className={styles.heroContainer}>
+    <div className={styles.heroContainer} id="Home">
       <div className={styles.content} ref={refLeft}>
         <h1 className={styles.bigOne}>
           Hey there <br /> Welcome
