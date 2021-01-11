@@ -1,0 +1,30 @@
+name: Portfolio Site
+
+on: [push]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    name: My Deployment
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
+      - name: Install Nodejs
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - name: Install Yarn
+        run: sudo apt update && sudo apt install yarn
+      - name: Build React app
+        run: yarn build
+      - name: Install surge
+        run: npm install -g surge
+      - name: Run Surge
+        run: surge ./build taimoorK.surge.sh --token ${{secrets.MY_SECRET}} 
+
+
+
+        
